@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jarek.guitarprogram.MainActivity"
+    android:background="@drawable/background_application">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:contentDescription="@string/image_program_tittle"
+        android:src="@drawable/guitar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_random"
+        android:id="@+id/button_random"
+        android:onClick="random_click"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/button_note"
+        android:layout_alignStart="@+id/button_note" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_note"
+        android:id="@+id/button_note"
+        android:layout_below="@+id/button_random"
+        android:layout_centerHorizontal="true"
+        android:onClick="note_click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_chord"
+        android:id="@+id/button_chord"
+        android:layout_below="@+id/button_note"
+        android:layout_alignLeft="@+id/button_note"
+        android:layout_alignStart="@+id/button_note"
+        android:onClick="chord_click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_power_chord"
+        android:id="@+id/button_power_chord"
+        android:onClick="power_chord_click"
+        android:layout_below="@+id/button_chord"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_end"
+        android:id="@+id/button_end"
+        android:onClick="endClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

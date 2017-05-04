@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jarek.guitarprogram.randomActivity"
+    android:background="@drawable/background_application">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_A"
+        android:id="@+id/button_rA"
+        android:layout_marginTop="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="choose_option"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_B"
+        android:id="@+id/button_rB"
+        android:layout_below="@+id/button_rA"
+        android:layout_alignLeft="@+id/button_rA"
+        android:layout_alignStart="@+id/button_rA"
+        android:onClick="choose_option"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_C"
+        android:id="@+id/button_rC"
+        android:layout_below="@+id/button_rB"
+        android:layout_alignLeft="@+id/button_rB"
+        android:layout_alignStart="@+id/button_rB"
+        android:onClick="choose_option"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_D"
+        android:id="@+id/button_rD"
+        android:layout_below="@+id/button_rC"
+        android:layout_alignLeft="@+id/button_rC"
+        android:layout_alignStart="@+id/button_rC"
+        android:onClick="choose_option"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_end"
+        android:id="@+id/button_rend"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="end_click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_play"
+        android:height="80dp"
+        android:width="80dp"
+        android:background="@android:drawable/ic_media_play"
+        android:onClick="play_click"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/number_score"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/button_play"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_score"
+        android:id="@+id/text_score"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button_rA"
+        android:layout_toEndOf="@+id/button_rA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/button_random"
+        android:id="@+id/textView10"
+        android:textColor="#fff"
+        android:layout_below="@+id/button_play"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

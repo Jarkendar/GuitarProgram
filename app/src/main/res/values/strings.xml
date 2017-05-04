@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GuitarQuiz</string>
+    <string name="button_note">Nuty</string>
+    <string name="button_random">Losowo</string>
+    <string name="button_chord">Akordy</string>
+    <string name="button_power_chord">Power Chords</string>
+    <string name="button_end">Koniec</string>
+    <string name="image_program_tittle">Program Gitarowy</string>
+    <string name="button_A">A</string>
+    <string name="button_B">B</string>
+    <string name="button_C">C</string>
+    <string name="button_D">D</string>
+    <string name="text_score">Wynik : </string>
+
+</resources>
